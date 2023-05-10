@@ -1,3 +1,5 @@
+"""Performs convertion between different temerature scales. """
+
 SHIFT = 3
 COMMENT = '#'
 climate_data = open('data/sc_climate_data_10.csv', 'r')
@@ -20,8 +22,7 @@ def FahrToKelvin(fahr):
     Args: 
         fahr (float): temperature in Fahrenheit
 
-    Re:wq
-    turn: 
+    Return: 
         float; temerature in Celsius
     """
     kelvin = FahrToCelsius(fahr) + 273.15
